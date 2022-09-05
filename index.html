@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wizard Web Development</title>
+		<link rel="icon" href="images/Wizard Web Design Ltd logo.png">
+		<link rel="stylesheet" type="text/css" href="stylesheetTest.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="menu.js"></script>
+		<script src="slideshow.js"></script>
+	</head>
+	
+	<body>
+		<a class="use" id="non-burg">Profile</a>
+		<div class="wrapper">
+			<img src="images/Wizard Web Design Ltd logo2.png" id="logo">
+			<div id="bi"><b>Wizard Website Development</b></div>
+			<a class="burger-nav" id="toggle"></a>
+			<ul id="open">
+				<li><a href="jobs.html">Jobs</a></li>
+				<li><a href="previous-employees.html">Previous Employees</a></li>
+				<li><a href="the-team.html">The Team</a></li>
+				<li id="use1"><a class="use" id="burg">Profile</a></li>
+			</ul>
+		</div>
+		<script>size();</script>
+		<img src="images/office1.jpg" class="slide-Image">
+		<img src="images/htmlCode.jpg" class="slide-Image">
+		<img src="images/meeting.jpg" class="slide-Image">
+		<div id="top-div"></div>
+		<a class="prev" id="arrow-left" onclick="lastImage()">&#10094;</a>
+		<a class="next" id="arrow-right" onclick="nextImage()">&#10095;</a>
+		<div id="numbertext">1 / 3</div>
+		<div id="text">Contact Us</div>
+		<center id="div-dots">
+			<a class="dot" id="dot1" onclick="showImage(0)"></a>
+			<a class="dot" id="dot2" onclick="showImage(1)"></a>
+			<a class="dot" id="dot3" onclick="showImage(2)"></a>
+		</center>
+		<div id="slideshow-container">
+		</div>
+		<div class="middleCommon middleTop" id="slideshow-Under">
+			<h1>Welcome to Wizard Website Development</h1>
+			<h2><u>About</u></h2>
+			<p>Wizard Website Development is a Website Development consultancy that was started in 2010 (by <a href="the-team.html#martin">Martin Pezet</a>) that makes modern and creative websites that tailors to the clients needs. We have countless 5 star ratings from our clients which shows that we really value the clients opinions and thoughts on their new place and how of work.</p>
+			<p>Wizard Website Development was a company started by Martin John Pezet in the Spring of 2010 from his home. The company was started because he have had many jobs working under bosses that he didn't agree with so he thought he'd try to be his own boss which has worked out as this company has been a successful as a private consultant can be. He worked on his own for 5 years and realized that some help was needed so he recruited Billy George who helped him programme some of the best websites and systems the company has created. The company has been trying to gain ground on the market leaders, and the company has been doing that by longs hours, great time management and hard work. </p>
+			<p><b>A quote from On the Limit:</b> <i>"Very satisfactory service through the use of great customer service and very clever and innovative coding!"</i></p>
+			<p>Wizard Website Development shows that starting as a small consultancy is a very good way to gain entrance into the market. If are an potentional client and are interesed about our service, then email <a href="#contact">martin.pezet@wizardwebdev.com</a>. The success of the company has really come to the forefront as the business has been increasing over the last year which has meant that there is a need for more members of staff within the company so if your are a professional Front/Back End Developer, Designer or Manager then apply now.</p><a href="jobs.html#test" class="apply">Apply Now</a><br><br><br><br>
+		</div>
+		<div class="background"></div>
+		<div class="middle middleCommon">
+			<h1 class="marg">Portfolio</h1>
+			<p class="marg">Here are some of the amazing (business) partners that we've worked with.</p>
+			<center>
+				<div class="boxSec">
+					<div class="box1">
+						<a href="https://www.zenman.com/">
+							<li>
+								<div class="port" id="portTL"></div>
+							</li>
+						</a>
+						<a href="https://www.onthelimit.co.uk/">
+							<li>
+								<div class="port" id="portTC"></div>
+							</li>
+						</a>
+						<a href="https://www.ultra-cis.com/">
+							<li>
+								<div class="port" id="portTR"></div>
+							</li>
+						</a>
+						<a href="https://www.w3schools.com/">
+							<li>
+								<div class="port" id="portML"></div>
+							</li>
+						</a>
+						<a href="http://moralfibrefood.com/">
+							<li>
+								<div class="port" id="portMC" ></div>
+							</li>
+						</a>
+						<a href="http://builtbybuffalo.com/">
+							<li>
+								<div class="port" id="portMR"></div>
+							</li>
+						</a>
+						<a href="https://www.lussmanns.com/">
+							<li>
+								<div class="port" id="portBL"></div>
+							</li>
+						</a>
+						<a href="https://tring.herts.sch.uk/">
+							<li>
+								<div class="port" id="portBC"></div>
+							</li>
+						</a>
+						<a href="https://www.bettshow.com/">
+							<li>
+								<div class="port" id="portBR"></div>
+							</li>
+						</a>
+					</div>
+				</div>
+			</center>
+			<a name="contact"></a>
+			<h1 class="marg">Contact Us</h1>
+			<p class="marg">Contact us on any of the follow social media or email <b>clients@wizardwebdev.com</b>.</p>
+			<center class="social marg">
+				<a href="http://www.facebook.com/"><img class="socialLower" src="images/icons/circle color/facebook.png"></a>
+				<a href="https://www.twitter.com/"><img class="socialLower" src="images/icons/circle color/twitter.png"></a>
+				<a href="http://www.snapchat.com/"><img class="socialLower" src="images/icons/circle color/snapchat.png"></a>
+				<a href="https://www.instagram.com/"><img class="socialLower" src="images/icons/circle color/instagram.png"></a>
+				<a href="https://uk.linkedin.com/"><img class="socialLower" src="images/icons/circle color/linkedin.png"></a>
+			</center>
+		</div>
+		<p class="footer">© Copyright of 2010-2018</p>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wizard Web Development</title>
+		<link rel="icon" href="images/Wizard Web Design Ltd logo.png">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+	</head>
+	
+	<body>			
+		<ul>
+			<img src="images/Wizard Web Design Ltd logo.png" id="logo">
+			<li><a href="jobs.html">Jobs</a></li>
+			<li><a href="previous-employees.html">Previous Employees</a></li>
+			<li><a href="the-team.html">The Team</a></li>
+			<li id="use1"><a class="use">Profile</a></li>
+			<li id="bi"><b>Wizard Website Development</b></li>
+		</ul>
+		
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="images/office1.jpg" style="width:100%">
+				<div class="text">Our Company</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="images/htmlCode.jpg" style="width:100%">
+				<div class="text">Computational thinking</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/meeting.jpg" style="width:100%">
+			  <div class="text">Contact Us</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function plusSlides(n) {
+				nextSlide(slideIndex += n);
+			}
+			
+			function nextSlide(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slides[slideIndex-1].style.display = "block";  
+			}
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				for (i = 0; i < slides.length; i++) {
+				   slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				slides[slideIndex-1].style.display = "block";  
+				setTimeout(showSlides, 5000);
+			}
+		</script>
+		<div class="middleTop">
+			<h1>Welcome to Wizard Website Development</h1>
+			<h2><u>About</u></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac condimentum lorem. Donec maximus auctor quam vitae pulvinar. Quisque aliquet libero id consectetur varius. Donec rhoncus viverra orci, eget mollis tellus pretium eu. Duis a neque leo. Fusce in malesuada eros, at posuere dolor. Curabitur at sagittis libero. Nunc sit amet diam libero. Etiam lorem libero, mattis nec placerat eget, imperdiet sit amet orci. Nunc vehicula, nisi a facilisis laoreet, quam nisi tincidunt turpis, finibus congue nisl velit in nunc. Vestibulum risus sem, dapibus at blandit non, suscipit at eros. Maecenas ac ligula molestie, dignissim lacus ac, consectetur urna. In consequat rhoncus suscipit. Nullam in risus hendrerit, venenatis lorem eget, aliquam elit. Phasellus commodo sapien nec nulla dignissim, eget lacinia nisi eleifend. Maecenas cursus tempus luctus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac condimentum lorem. Donec maximus auctor quam vitae pulvinar. Quisque aliquet libero id consectetur varius. Donec rhoncus viverra orci, eget mollis tellus pretium eu. Duis a neque leo. Fusce in malesuada eros, at posuere dolor. Curabitur at sagittis libero. Nunc sit amet diam libero. Etiam lorem libero, mattis nec placerat eget, imperdiet sit amet orci. Nunc vehicula, nisi a facilisis laoreet, quam nisi tincidunt turpis, finibus congue nisl velit in nunc. Vestibulum risus sem, dapibus at blandit non, suscipit at eros. Maecenas ac ligula molestie, dignissim lacus ac, consectetur urna. In consequat rhoncus suscipit. Nullam in risus hendrerit, venenatis lorem eget, aliquam elit. Phasellus commodo sapien nec nulla dignissim, eget lacinia nisi eleifend. Maecenas cursus tempus luctus.</p>
+		</div>
+		<div class="background"></div>
+		<div class="middle1">
+			<h1>Portfolio</h1>
+			<p>Here are some of the amazing partners that we've worked with.</p>
+			<div class="box1">
+				<div class="row">
+					<div id="portTL"></div>
+					<div id="portTC"></div>
+					<div id="portTR"></div>
+				</div>
+				<div class="row">
+					<div id="portML"></div>
+					<div id="portMC"></div>
+					<div id="portMR"></div>
+				</div>
+				<div class="row">
+					<div id="portBL"></div>
+					<div id="portBC"></div>
+					<div id="portBR"></div>
+				</div>
+			</div>
+		</div>
+		<p class="footer">Copyright of 2010-2018</p>
+	</body>
+</html>
